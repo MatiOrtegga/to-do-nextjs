@@ -57,6 +57,7 @@ function Container() {
         else return todo;
       })
      setTodos(updateTodos);
+     localStorage.setItem("Todos",JSON.stringify([...updateTodos]));
   }
   return (
     <>
